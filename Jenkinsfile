@@ -22,11 +22,11 @@ pipeline {
                 echo "This is the 'test' stage"
                 '''
             }
-            post {
-                always {
-                    junit 'test-reports/results.xml'
-                }
-            }
+            #post {
+                #always {
+                    #junit 'test-reports/results.xml'
+                #}
+            #}
         }
       stage ('OWASP FS SCAN') {
             steps {
