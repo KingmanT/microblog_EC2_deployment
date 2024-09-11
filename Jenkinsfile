@@ -24,7 +24,7 @@ pipeline {
             }
             post {
                 always {
-                    #junit 'test-reports/results.xml'
+                    junit 'test-reports/results.xml'
                     sh '''#!/bin/bash
                     echo "this is part 2 of the test stage"
                     '''
