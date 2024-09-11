@@ -45,7 +45,7 @@ pipeline {
             steps {
                 sh '''#!/bin/bash
                 source venv/bin/activate
-                gunicorn -b :5000 -w 4 microblog:app
+                gunicorn -b :5000 -w 4 microblog:app &
                 '''
             }
         }
